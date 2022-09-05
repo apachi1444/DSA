@@ -1,0 +1,6 @@
+a ^ b = ( a ^ 2 ) ^ ( b / 2 ) if b is even
+	
+	a . a ^ (b-1) if b is odd
+
+
+
