@@ -1,0 +1,12 @@
+125 -> 521 
+
+1) 5
+2) 5 * 10 + 2 = 52
+3) 52 * 10 + 1 = 521
+
+
+Remark : 
+- To get the last digit ( n % 10 )
+- divide the whole number by 10
+- do the % 10 of the new number that we got from the division
+- until n = 0
