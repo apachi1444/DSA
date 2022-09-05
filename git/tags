@@ -1,0 +1,15 @@
+two types 
+
+git tag nameoftag
+
+git show namaoftag for more details
+
+
+
+annotated 
+store extra metadata like developer name email , date and more 
+
+lightweighted
+
+
+these tags are used to mark the release of the project that we are working on it

@@ -1,0 +1,5 @@
+the pull command : merge + fetch
+
+git remote rm nameBranchRemote
+
+git remote rename oldname newname

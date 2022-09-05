@@ -1,0 +1,16 @@
+the head points out to the last commit on the current branch
+
+git show HEAD
+
+When head doesn't point to most recent commit  , such state : 
+is called detached Head
+what do we mean by detached
+
+when the head points on a commit ( when we do the git checkout hash of commit )
+it means detached it's not pointing anymore on the feature directly
+
+and when the head points on that commit we can do some modification
+
+and when we points again on the feature these moidification 
+done after that commit are called detached commits because no pointer
+points on thme 

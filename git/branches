@@ -1,0 +1,3 @@
+git branch or git branch --list
+
+git branch -d nameBranch to delete that branch

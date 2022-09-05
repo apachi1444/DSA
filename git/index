@@ -1,0 +1,2 @@
+git doesn't have a dedicated staging directory where it can store some objects representing file changes 
+but instead of this , it uses a file called "index"
