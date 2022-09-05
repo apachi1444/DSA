@@ -1,0 +1,14 @@
+fun(n) {
+	
+	if ( n == 0 ) return ;
+	for ( i = 0 ... n ) => nc complexity
+	fun(n/2)
+	fun(n/2)
+
+}
+
+T(n) = 2 T(n/2) + nc
+
+		its nc * length of the tree 
+			 nc * log 2 ( n ) 	
+	
