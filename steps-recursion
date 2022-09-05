@@ -1,0 +1,10 @@
+this file contains the steps to write a recursive problem
+
+1/ find the best case ( if n == 0 return ) for example 
+2/ find the relation between a problem and a subproblem
+
+	for example 
+		f(n) = f(n-1) + "Hello"
+		sum(n) = sum(n-1) + 1			
+
+3/ Generalise the relation
