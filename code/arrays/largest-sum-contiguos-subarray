@@ -1,0 +1,7 @@
+first we must do the brute force ( n square )
+second sorting the array will lead to the same result ( n square )
+
+even using space will lead to the same result ( we have to see 
+all the subarrays )
+
+so must use the kadane's algorithm which bring the complexity to O(n)

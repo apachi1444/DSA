@@ -1,0 +1,4 @@
+backtracking is similar to recursion but recursion is dumb 
+because backtracking always try to check if that path 
+that he will do is beneficial or not for him 
+if not he will not continue

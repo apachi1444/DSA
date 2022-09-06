@@ -1,0 +1,14 @@
+first we must do the brute force
+
+then try to decrease the complexity using the sorted array ( if it demands)
+
+if not 
+ 
+!! use the "use space" : either memorization ( DP ) or HashMap 
+				because in the hash map all operations 
+				are O(1)
+so in this case ( in the case of use space ) we will make the space complexity
+is 0(n)
+
+but the interviewer will told you to make it constant space 
+so here we must find the logic
