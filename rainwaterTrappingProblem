@@ -1,0 +1,16 @@
+we have an array of height of each building and we must find how many blocks
+the water will be stored in
+
+like 3 , 1 , 2 , 4 : so the response is 2 + 1 because we have two empty blocks
+in the second building and one block in the third one
+
+we must do the preprocessing !!!
+
+left array and right array 
+
+left : will calculate the max of each index i comparing with its left neighbor
+right : will calculate the max of each index i comparing with its right neighbor
+
+then the whole formula : 
+
+i = Math.min(left[i] , right  [ i] ) - a[i]

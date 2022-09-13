@@ -1,0 +1,26 @@
+we should find the min of the array and then max of the rest of array which satisfy the condition
+of getting the max profit
+
+buy ans sell stocks part 2 :
+
+we can buy and sell as much as want stocks but if we already bought some stock
+we have to sell it before purchasing another one 
+
+
+---------
+so here we must find the local min and local max each time 
+and we compare the value of today with yesterday always 
+
+
+--------------------------------------
+int maxProfit ( array a ) {
+
+	int profit = 0 
+	for ( int i = 0   ; i < a.length ; i++){
+		if (a[i] > a[i-1] ) {
+			profit += a[i] - a[i-1]
+		}
+	}	
+
+}
+
