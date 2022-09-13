@@ -1,0 +1,14 @@
+comparing each two adjacent elements and then do the swap 
+
+in nutshell , we will move in each iteration the last element to his right place
+first iteration : we did n comparaison we get the max 
+next iteration : we do n-1 because a sorted element already 
+
+ 4 3 7 1 5
+ 3 4 7 1 5
+ 3 4 1 7 5
+
+ 3 4 1 5 7 -- end of first iteration and start of second iteration
+ 
+ 3 1 4 5 7
+ 1 3 4 5 7	
