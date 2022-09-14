@@ -1,0 +1,19 @@
+uses the divide & conquer method 
+
+divide the problem into sub problems and then assemble these sub problems
+and these sub problems are independant 
+
+but in dynamic programming these sub problems are dependant 
+
+
+mergeSort ( a , l , r ) {
+	
+	if ( l < r ) {
+	    int mid = ( l + r ) / 2
+	    mergeSort ( a , l , mid )
+	    mergeSort ( a , mid + 1 , r )
+		// this is another function
+	    merge(a , l , mid , r )			
+	}	
+
+}

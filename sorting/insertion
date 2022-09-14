@@ -1,0 +1,35 @@
+it's a little bit optimized comparing to bubble but both n square in worst cases
+
+so we divide our array into two arrays ( unsorted one , and sorted one )
+
+so we take elements from the unsorted one and put them in the sorted one
+until the unsorted get empty and the sorted get bigger
+
+at first the sorted one contains the first element of the array
+so the iteration in the unsorted array will start from the i = 1 NOT 0 
+
+so we take our index i and then compare its element to the elements in the 
+sorted one 
+
+8 4 1 5 9 2
+
+first sorted contains only 8 
+
+i =1
+ comparte 4 to 8 -> swap both elements 
+	but we should put the element of unsorted array at index i 
+	in a variable temp = unsorted[i]
+
+so after swapping 4 with 8 
+our sorted array will be 4 8 and the unsorted 1 5 9 2
+
+now temp = 1
+
+1 greater than 8 shift 8 WITH 1 
+1 greater than 4 shift 4 WITH 1
+
+sorted = 1 4 8 unsorted = 5 9 2 
+temp = 5
+shift 8 with 5 
+
+etc .......

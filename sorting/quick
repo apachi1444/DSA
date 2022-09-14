@@ -1,0 +1,57 @@
+complexity nlog n
+
+its methodology is like having boys are going to take photos 
+
+so the short one get front of tall ones
+
+so we start from the beginning of the array
+
+we choose randomly an element and we call it the "pivot"
+
+we do two pointers i and j ( i from the beginning and j from the end )
+
+i will stop if he will find an element bigger than the pivot
+j will stop if he will find an element smaller than the pivot
+
+4 6 2 5 7 9 1 3
+
+pivot = 4
+
+i = 4 j = 3
+
+first -- i  = 6 > 4 will stop there
+first -- j  = 3 < 4 will stop there
+
+then swap a[i] with a[j]
+
+4 3 2 5 7 9 1 6
+
+second -------
+
+i =  3 3 < 4 continue 
+i = 2  2 < 4 continue
+
+i = 5  5 > 4 break
+
+j = 6  6 > 4 continue
+j = 1  1 < 4 break
+
+swap 1 with 5 
+
+4 3 2 1 7 9 5 6
+
+
+
+third -------------
+
+i = 1 , then  7 break there
+j = 5 then  9 then 7 then 1 break ( j < i ) swap j with pivot 
+
+now pivot contains bigger elements in front of him smaller elements behind him
+
+so we have 1 3 2  - 4  - 7 9 5 6
+it's called partioning logic ( recursive calls )
+
+now we should treat the left or right side of 4
+
+

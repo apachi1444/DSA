@@ -1,0 +1,7 @@
+select elemnt from 0 to n-1 ( we didn't touch the last one )
+
+then we compare the element selected and loop through the rest of the array
+( i + 1 until the end of array ) 
+
+if we find another min then we swap it with the first element selected 
+
