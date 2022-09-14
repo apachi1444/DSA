@@ -1,0 +1,13 @@
+the dp is based on subproblems which are dependant 
+we have to store it somewhere to use it their value if we find the same subproblem again
+
+!= different than the divide & conquer
+each subproblem is independant
+
+the greedy approach is we know every time the way we have to go on
+
+result = 18 using three coins ( 1 , 5 7 ) 
+complexity will be 3 ^ n without dp
+with dp will be O ( m . n ) m : number of coins used
+
+dp[n-a[i]] = numberOfCoinsUsed
