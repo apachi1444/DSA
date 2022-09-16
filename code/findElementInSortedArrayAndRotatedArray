@@ -1,0 +1,54 @@
+
+this is a modifier version of binary Search
+
+so must find the mid element in the array
+
+and then checks if the left or right part is sorted or not 
+
+func findElement( int a[] , int key) {
+
+	int low = 0 
+	int high = a.length - 1
+	while ( low <= high ) {
+		int mid = ( low + high ) / 2
+		if ( mid == key ) return mid ;
+
+		// this part means that we are in the left part
+
+		if ( a[low] < a[mid] ) { 
+			
+			 // if the key exists in the left part
+			
+			if ( key < a[high] && key >= a[low] ) { 
+				
+				high = mid - 1
+	
+			}		
+				
+			// if the key exists in the right part and not in the left part
+			 else { 
+				low = mid + 1
+			}	
+	
+		}
+
+		// this part means that we are in the right part
+
+		else {
+		
+			if ( key > a[mid] && key < a[high] ) {
+				low = mid + 1
+			} 
+			else {
+				high = mid - 1	
+			}
+			
+	
+		}
+
+	}
+
+}
+
+
+	

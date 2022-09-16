@@ -1,0 +1,14 @@
+function searchInfinite(int array[] , int key){
+	
+	int low = 0 
+	int high = 1
+	while ( a[high] < key ) {
+
+		low = high 
+		high * = 2
+	
+	}
+
+	return binarySearch(array , key , low , high ) 
+
+}
