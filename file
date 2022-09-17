@@ -1,1 +1,2 @@
 this file is for testing the rebasing the branches of main and featureA
+we should do the git rebase featureA master
