@@ -1,3 +1,7 @@
 git branch or git branch --list
 
 git branch -d nameBranch to delete that branch
+
+a branch is nothing but a pointer to a commit 
+
+fast forward merge is moving the pointer of the branch to the last commit : this is called the fast forwarding merging
