@@ -1,0 +1,4 @@
+so the brute force method is to take an element 
+and then so an inner loop to check whether this element exists or not 
+
+o(n square )

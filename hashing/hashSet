@@ -1,0 +1,5 @@
+insert / search / delete = O(1)
+
+in java it is a collcectino framework library
+
+it is unoredered so we don't know the order of printing its elements
