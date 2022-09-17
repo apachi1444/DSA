@@ -1,0 +1,40 @@
+we use the hashSet 
+
+the key is the sum and the value is the index of the position
+
+a0 -> 0
+a0 + a1 -> 1
+a0 + a1 + a2 -> 2
+
+void subArray ( int a[] , int sum) {
+
+
+	int curSum = 0 
+	int start = 0 
+	int end = -1
+	HashMap<Integer,  Integer> map = new HashMap()
+	for ( int i = 0 ; i  < n ; i++){
+		curSum += a[i]
+		if ( curSum - sum == 0 ) {
+		
+			start = 0
+			end = i
+			break
+
+		}
+
+		if ( map.contains(curSum - sum) ) {
+			start = map.get(curSum - sum ) + 1
+			end = i 
+			break
+		}
+		map.put(curSum)
+	}
+	if ( end == -1 ) {
+		sout("not found")
+	}	
+	else{
+		return " start :  $start + end : $end"
+	}
+
+}
