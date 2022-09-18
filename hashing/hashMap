@@ -1,0 +1,26 @@
+hashing in general takes long integer into small ones
+
+o(1) and o(len) for strings
+
+should uniformly distribute large keys into hash table slots
+this table is a list of nodes ( Node {
+					k key
+					v value
+					int hash
+					Node next
+				} )
+
+array = [24 , 16 , 12 , 17 , 18 , 10 , 9] 
+
+h(key) = key % 7
+
+our new array of hashing is : 
+0 , 1 , ... 6 rests possible when dividing by seven
+
+for example 24 , 17 and 10 have same modulo : 3
+
+we will put 24 in case "3"
+24 -> 17 -> 10 ( next of 24 is the node 17 )
+
+when we do the arr.get(12) : we will calculate the hash of 12 verify 
+the element existing in new array is the same as 12 or not
