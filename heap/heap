@@ -1,0 +1,73 @@
+is a complete binary tree ( complete : each node has exactly 2 children )
+	heap's property ( even max or min )
+	max :its children is always smaller than itself ( the parent element )
+	min : its children is always bigger than itself ( the parent element )
+	it's printed in the form of array
+	
+		50 
+
+	40 		45
+
+30 		20  35 		10
+
+// starting from the first index ( 1 )
+
+array = [X , 50 , 40 , 45 , 30 , 20 , 35  , 10]
+
+to know for example the parent of 40 divide its index by 2 
+2 / 2=  1 
+left child =  2 * i 
+right child = 2*i + 1
+
+-> that s why we need a complete binary tree
+
+so when we insert an element we should put it in the last element and then
+verify its parent to show if it is bigger or not
+
+void insert(A[] , n , value ) {
+
+	n = n+1
+	A[n] = value 
+	int i = n
+	while ( i > 1 ) {
+		
+		int parent = n / 2
+
+		if ( a[parent] < a[i] ) {
+			swap ( A , parent, i )
+			i = parent					
+		}else{
+			return;
+
+
+		}
+
+	}
+
+}
+
+
+void delete (A[] , n) {
+
+        
+        A[1] = A[n]
+	n = n - 1
+        int i = 1
+        while ( i < n ) {
+
+                int left = A[2*i]
+		int right = A[2*i + 1]
+
+		int larger = left > right ? 2 *i : 2*i + 1
+
+                if ( A[i] < a[larger] ) {
+                        swap ( A , i , larger )
+                        i = larger
+                }else{
+                        return;
+                }
+
+        }
+
+}
+
