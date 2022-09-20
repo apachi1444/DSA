@@ -1,0 +1,9 @@
+we have an array unsorted 
+
+traversing an array o(n)
+
+and each item to insert it to the heap takes o(logn)
+
+so creating the heap takes O(n log n )
+
+heapify : creating the heap in O(n)

@@ -1,0 +1,35 @@
+array 20 10  60 30 50 40
+
+k = 3
+
+sorted array = 10 20 30 40 50 60
+we must return 40 the third largest element 
+
+we must use the min heap
+
+and print the top element of the three elements that we insert
+
+int KthLargest( int a[] , int k ) {
+
+	PriorityQueue<Integer> pq = new PQ()
+	for ( int i = 0 ; i < k ; i++){
+		pq.add(a[i])
+	}
+	// we will treat only the k elemets
+
+	for ( int i = k ; i < a.length ; i++) {
+	
+		if (pq.peek() < a[i]){
+		
+
+			// everytime we do the pop it will sort again the heap
+			pq.pop()
+			pq.add(a[i])		
+	
+		}
+	
+	}
+	// return the root element
+	return pq.peek()
+
+}

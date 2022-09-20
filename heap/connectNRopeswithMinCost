@@ -1,0 +1,27 @@
+array = 2 , 5 , 4  , 8 , 6 , 9
+
+cost = 7 + 11 + 19 + 25 + 34
+
+why : 2+ 5 = 7 , 7+4 = 11 , 11+8 = 19 etc
+
+best way : select two smallest elements -> add them -> remove them and replace them with new sum
+	then again until the array will be empty
+
+int minCost(int a[]) {
+	
+	PQ pq = new PQ
+	for ( int i = 0 ; i < a.length ; i++ ) {
+		pq.add(a[i])
+	}
+
+	int ans = 0
+	while (pq.size() > 1){
+		int first = pq.poll()
+		int second = pq.poll()
+		int sum = fisrt + second
+		and += sum
+		pq.add(sum)
+	}
+	return ans;
+
+}

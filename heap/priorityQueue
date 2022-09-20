@@ -1,0 +1,5 @@
+it 's a ds and it is using the max heap IN C++
+
+it's used in java collection framework( used in java the min heap by default ) 
+if we want to make max as default , we should pass a comparator inside the constrcutor
+PriorityQueue<> ( Collections.reverseOrder());
