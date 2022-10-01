@@ -1,0 +1,23 @@
+Queue is an abstract class using the FIFO strategy
+
+we have to implement it using the linked list / array ...
+
+the first poiner on the first element is "front"
+
+the final pointer on the last element is "rear"
+
+
+
+for the linked list :
+
+enqueuing is adding an element in the queue of the list 
+so will move the "rear" pointer to the new element
+
+for dequeuing : remove element from the first position of the queue
+aka removing the first pointer "front" to the next element !!
+
+
+
+---------------------------------------------------------------
+
+to check if the queue is empty or not we have to check if the front pointer is null or not !

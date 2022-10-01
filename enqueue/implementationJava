@@ -1,0 +1,15 @@
+import java.util.*
+
+Queue<Integer> q = new LinkedList<>();
+Queue<Integer> q = new ArrayList<>();
+
+q.offer(45);
+// pushing in the queue
+
+
+// tells you the element that will popped out
+q.poll()
+
+// remove the first element
+q.peek()
+
