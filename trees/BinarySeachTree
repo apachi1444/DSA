@@ -1,0 +1,5 @@
+elements on the left are always smaller than the elements on the right
+
+for search , insert , delete : 0(log n);
+hashTable
+for search , insert , delete : 0(1); 
