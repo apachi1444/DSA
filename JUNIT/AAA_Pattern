@@ -1,0 +1,20 @@
+it's a method for dividing the test into 3 parts
+
+Arrange 
+objects will be created , mocks setup 
+
+Act
+invokation of the method that we must test !
+
+Assertion !
+check whether the expectations were met or not !
+
+// Assert
+var store = new Store();
+
+// Act
+bool succes = store.hasSixElements();
+
+// Assert
+Assert.true(succes);
+Assert.Equal(5 , getInventory(store));
