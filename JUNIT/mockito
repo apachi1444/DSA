@@ -1,0 +1,8 @@
+it's a library for making the mock concept !
+
+but what does it mean mocking !
+it's helping the developer to test things related only to his class
+cuz mockito will create objects that have no dependencies on a test-specific
+thanks to dependency injection !
+
+
