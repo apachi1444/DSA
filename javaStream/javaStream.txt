@@ -1,0 +1,69 @@
+Streams are not a DS but they take input from Collections / Arrays / IO channels !
+
+they don't change the results , they provide results via pipeline !
+
+Intermediate operations ! can be pipelined !
+example : map / filter / sorted ! .sorted();
+
+
+Terminal operations ! mark the end of a stream and return the result !
+example : collect ! / forEach / reduce the elements of a stream to a single value !
+
+
+Set<Integer> squareSet = numbers.stream().map(x->x*x).collect(Collectors.toList());
+
+
+
+----------------------------------------------------
+
+Consumer , Supplier , Predicate are functional interfaces !
+
+Consumer : accepts a single input and returns no output !
+it consumes the input supplied to it !
+
+has two Method : 
+void accept ( T t );
+default Consumer<T> andThen(Consumer<? super T> after);
+
+for example the forEach method accpets consumer interface implementaiton !
+
+Consumer<String> printConsumer = t -> System.out.println(t);
+Stream<String> cities = Stream.of("Sydney" , "New York");
+cities.forEach(printConsumer);
+
+Consumer has certain implemetation !
+
+IntConsumer which accepts only an integer !
+
+-----------------------------------------
+
+Supplier : simple interface !
+: means that this implementation is a supplier of results !
+
+primary usage is enabling deferred execution !
+( delaying the execution until it is needed ! )
+Optional Class has a method name orElseGet ! which is triggered when optional has no data !
+
+
+
+-----------------------------------------
+
+
+
+Predicate : a boolean valued function of an argument !
+
+mainly used to filter data from a java Stream !
+default Predicate<T> and(Predicate<? super T> other);
+default Predicate<T> or(Predicate<? super T> other);
+static <T> Predicate<T> isEquals(Object targetRef);
+default Predicate<T> negate();
+
+
+-----------------------------------------
+
+Function is more of generic one that takes one argument of type T and 
+results R ( single Abstract Method )
+Stream.map(method)
+
+
+
