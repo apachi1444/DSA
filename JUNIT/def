@@ -1,0 +1,5 @@
+AssertJ : is java library of JUNIT
+provides a list of assertions that provides code readibiility !
+super easy to use within the ide !
+
+assertThat(haha.getName()).isEqualTo("Yessine");
