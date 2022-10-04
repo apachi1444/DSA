@@ -1,0 +1,19 @@
+@Before
+
+are functions that need to be run before each test 
+like the setup ! or the ini();
+
+@After
+clear the list after the execution of each test !
+
+
+@BeforeClass 
+if we want to execute an expensive common operation before each test
+it's so preferable to execute it only once before running all tests
+
+RQ !!!!
+@AfterClass and @BeforeClass must static functions !!!
+
+@BeforeEach @BeforeAll ( JUNIT 5 )
+eq
+@Before     @BeforeClass ! ( JUNIT 4 )
