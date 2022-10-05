@@ -1,0 +1,27 @@
+the code can look at hiself and examine and change any element of java Class
+in the middle of our program
+
+catObject.getClass() : is the window to many reflection services to the user!
+
+// return an array of type Field !
+Field[] fields = catObject.getClass().getDeclaredFields();
+
+// with reflection the rules of changing the value of fields will be no more
+// available ( even we can change a final private field )
+
+if ( field.getName().equals("name")){
+	
+	// we must do this !
+	field.setAccessible(true);
+
+	field.set(catObject , "Yessine Jaoua");
+}
+
+// getDeclaredMethods in Object Method
+
+// if this method is private !
+method.setAccessible(true);
+
+method.invoke(catObject , listOfParamsOfThatSpecificFunction);
+// if we have a static method either private or public !
+method.invoke(null);
