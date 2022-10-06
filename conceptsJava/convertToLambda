@@ -1,0 +1,8 @@
+doubleNumberFunction = public int double(int a){
+	return a *2;
+}
+
+remove public 
+remove the name of the function ( double )
+remove the return type ( compiler detect automatically )
+

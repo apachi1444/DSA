@@ -1,0 +1,18 @@
+can only be used with only types of interfaces !
+
+interfaces are like a contracts for classes that want to implement that interface !
+
+lambdas allow us to pass only a specific implementation !
+
+without creating a new class that impelement that method and 
+loose too many lines of code !
+
+it's like passing directly the specific implementation to the function 
+that uses this interface !
+
+without a creating a new object !
+
+printThing(not an object that implements that interface but directly the implementation of that interface )
+
+
+lambda are only used when we have functional interfaces ! ( one SAM ) !
