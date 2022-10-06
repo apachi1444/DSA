@@ -1,0 +1,8 @@
+default can be used by any object that implements that interface !
+we can override the default method in the implementing class !
+
+
+
+but static can be used only be the class !
+
+
