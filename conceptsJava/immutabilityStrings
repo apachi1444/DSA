@@ -1,0 +1,31 @@
+String name ="Yessin";
+name = "Jaoua";
+
+	
+first the name is the ref ( containing the address of that string object )
+
+when we override the name 
+we create another address in the heap 
+and now the name variable is referencing to the new memory address!
+
+but what happens in the background!
+
+when we do String name = "Yessine";
+	   String anotherName ="Yessine";
+
+Actually Java makes in the memory a zone called the String pool
+which contains the values of Strings created 
+
+so when we create another variable anotherName it will search 
+in the String pool if it contains a string value "Yessine"
+and then make the variable name "anotherName" points on the same memory
+address of "Yessine"
+
+rq !!
+and that object in the string pool can never be changed even we have one million
+variables pointing to this variable String in the string pool !
+
+but it's not the case if we do
+String thirdName = new String("John");
+------------> java will create a new memory space 
+		so different addresses !

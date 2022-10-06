@@ -1,0 +1,12 @@
+will return true if both of these varialbes 
+are referring to the same object in the memory !
+
+String str1 = new String("Hello");
+String str2 = new String("Hello");
+
+str1 == str2 false because they are referring to differenet memory obejcts !
+
+checking the memory location !
+
+primitives values are referring to the actual value and not the memory location!
+Boolean , char , double , int , byte , short , long , float 

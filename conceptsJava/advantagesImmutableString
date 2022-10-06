@@ -1,0 +1,12 @@
+for Security
+
+suppose we want to change the money of a client in the bank !
+
+so we will create another variable that points to the same object memory
+
+so if we change the value of the string it will not overrid the string
+in the stirng pool instead it will create another String !
+
+-----------------
+
+also the string is thread safe !

@@ -1,0 +1,7 @@
+the difference that == checks the memory addresses 
+
+but .equals go to that memory address
+and checks their value inside that memory !
+
+so in every class we have already the .equals method !
+
