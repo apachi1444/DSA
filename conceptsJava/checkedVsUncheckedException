@@ -1,0 +1,16 @@
+checked in the compile time 
+for example : FileReader reader = new FileReader(fileName);
+
+we have to make the function throws the Exception !
+
+Exception
+
+-> Error ( out of memory error , stackOverFlowError!  )
+-> Exception 
+	-> RunTimeException ( we have to catch them manually : NullPointerExcpetion , NumberFormatException! )
+	-> Checked Exception (IOException) 
+
+
+the finally bloc will always be executed !
+
+
