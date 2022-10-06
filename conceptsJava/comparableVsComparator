@@ -1,0 +1,19 @@
+using comparable interface 
+
+a comparable object is able to compare himself to another object 
+the class itself impelements the Comparable interface 
+so -----
+we implement the class compareTo() !!!!!!!!!!!
+
+
+
+Comparator is external to the element type 
+it's a separate class !
+we create multiple comparators that implement Comparator 
+
+---- so we must implement the compare() method !
+
+then in the main
+create an object of that comparator
+
+Collections.sort(list, comparatorByName);
