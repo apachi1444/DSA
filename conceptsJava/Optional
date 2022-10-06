@@ -1,0 +1,29 @@
+it's like a box which contains the object that we are looking for 
+or an empty box
+
+// means that this object the box can contain null object
+
+return Optional.ofNullable(cat);
+
+// means that this box can only contain non null object!
+
+return Optional.of(cat);
+
+Optional.empty();
+
+// in the main method
+Optional<Cat> optionalCat = findByName();
+
+if ( optional.isPresent() ) {
+	sout(optionalCat.get().getAge());
+}
+
+
+
+// this is the professional way
+
+// if we can't find that cat we will create a cat by default !
+// or Else return the value inside of that box optional 
+Cat myCat = optionalCat.orElse(new Cat("UNKNOW" , 15));
+
+
