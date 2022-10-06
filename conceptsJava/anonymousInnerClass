@@ -1,0 +1,26 @@
+it's only used with no name 
+used to instanciate only one object !
+
+define and instanciate the object in the same time !
+
+can either extend any other class
+or implemenet an interface !
+
+// this is the normal case !
+Animal newAnimal = new Animal();
+
+// this is the inner anonymous case!
+Animal anonAnimal = new Animal(){
+	public void makeNoise(){
+		sout("overriding this method !");
+	}
+}
+
+
+// this is case for the interface !
+Runnable myAnonymousRunnable = new Runnable(){
+	@Override
+	public void run(){
+		
+	}
+};
