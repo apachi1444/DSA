@@ -1,0 +1,13 @@
+pass by value:  makes a copy of that value in memory 
+
+pass by ref : makes a copy the address of that param, so modifying the param
+will change the original value !
+
+for primitive types we can think of passing by value
+for references types java passes the reference by value !
+
+creates a copy of the pointer to the object in memory!
+so myCat for example = 0X12345
+we will create a copy of that poiner i mean the adress of that object !
+
+
