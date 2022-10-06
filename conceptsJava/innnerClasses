@@ -1,0 +1,6 @@
+are the classes the defined inside another class !
+
+3 types of inner classes
+- static inner class
+- public non static ( we need to instanciate an object of the outer to get acces to the inner )
+- local inner class ( it's declared inside a method of the outer class ) !
