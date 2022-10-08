@@ -1,0 +1,10 @@
+we have to make scanner.close() when we finish using it !
+
+scanner.nextLine() : will stop until the ser hits enter !
+
+int age = scanner.nextIn(); // will wait until she gets the first while space!
+even if we write something else after the number 
+we can stock that thing in a String variable
+
+int age = scanner.nextInt();
+String name = scanner.nextLine();
