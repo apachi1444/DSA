@@ -1,0 +1,11 @@
+enums is a class that represents a group of constants ( final vars )
+
+enum Level{
+	LOW , MEDUIM
+}
+
+Level low = Level.MEDUIM;
+
+For ( Level var : Level.values()){
+	sout(var);
+}
