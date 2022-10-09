@@ -1,0 +1,48 @@
+responsible for creating the instance of the class
+
+( known also as virtual constructor )
+
+let the sub classes to choose which object to create
+
+promotes the loose coupling
+no need to bind application speicific classes into the code !
+
+code only interact with interface or the abstract class !
+
+import java.io.*;      
+abstract class Plan{  
+         protected double rate;  
+         abstract void getRate();  
+   
+         public void calculateBill(int units){  
+              System.out.println(units*rate);  
+          }  
+}//end of Plan class.  
+
+
+
+class GetPlanFactory{  
+      
+   //use getPlan method to get object of type Plan   
+       public Plan getPlan(String planType){  
+            if(planType == null){  
+             return null;  
+            }  
+          if(planType.equalsIgnoreCase("DOMESTICPLAN")) {  
+                 return new DomesticPlan();  
+               }   
+           else if(planType.equalsIgnoreCase("COMMERCIALPLAN")){  
+                return new CommercialPlan();  
+            }   
+          else if(planType.equalsIgnoreCase("INSTITUTIONALPLAN")) {  
+                return new InstitutionalPlan();  
+          }  
+      return null;  
+   }  
+}//end of GetPlanFactory class.  
+
+
+// in the main method !
+
+GetPlanFactory planFactory = new GetPlanFactory();
+ Plan p = planFactory.getPlan(planName);  
