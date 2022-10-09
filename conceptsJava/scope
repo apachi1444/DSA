@@ -1,0 +1,5 @@
+vars are available only in regions they are created 
+this is called scope !
+
+method scope !
+block scope ! between {}
