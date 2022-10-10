@@ -1,0 +1,17 @@
+the compile one is 
+
+at compile time , java knows which method to call by checking the method 
+signatures !
+
+through method overloading !
+inheritance is not involved !
+
+
+
+
+the runtime one is !
+through method overriding 
+the jvm determines which method to call at runtime !
+
+"late binding !"
+
