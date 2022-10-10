@@ -1,0 +1,49 @@
+class Car {
+    // Attributes associated with car
+    int model, no;
+ 
+    // Constructor of class 1
+    Car(int model, int no)
+    {
+        // This refers to current instance itself
+        this.model = model;
+        this.no = no;
+    }
+ 
+    // Method
+    // To print object details
+    void print()
+    {
+        System.out.println("no = " + no
+                           + ", model = " + model);
+    }
+}
+
+
+// Class 2
+// Wrapper over class that is used for swapping
+class CarWrapper {
+    Car c;
+ 
+    // Constructor
+    CarWrapper(Car c) { this.c = c; }
+}
+
+
+// swap() doesn't swap c1 and c2
+    public static void swap(Car c1, Car c2)
+    {
+        Car temp = c1;
+        c1 = c2;
+        c2 = temp;
+    }
+
+
+// This method swaps car objects in wrappers
+    // cw1 and cw2
+    public static void swap(CarWrapper cw1, CarWrapper cw2)
+    {
+        Car temp = cw1.c;
+        cw1.c = cw2.c;
+        cw2.c = temp;
+    }
