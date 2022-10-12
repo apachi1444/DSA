@@ -1,0 +1,10 @@
+a problem solving technique for arrays and lists !
+used when we need nested loops into a single loop
+
+type of problem :
+	
+	- based on array , list or string type
+	- ask to find subarnge in that array ( longest , shortest , target values =
+	- longest sub satisfying a target condition
+
+
