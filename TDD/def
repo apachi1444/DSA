@@ -1,0 +1,20 @@
+model ( red , green , refactor )
+
+first write the test ( before creating the function )
+----> will give you red 
+
+
+write the function 
+----> will give you green
+
+pass a lot of time to reread the code , maintain the code etc ...
+----> refactor!
+
+
+SUT ( system under test !):
+AAA structure !
+
+arrange : tous les entrées 
+act : execute the system with the inputs done by user and stock the outpuuts in vars
+assert : verify outputs with the expected value
+
