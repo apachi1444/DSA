@@ -1,0 +1,21 @@
+void DFStoFindInOrder(Node node){
+
+	if (  node == null) 
+		{ return null;} 
+
+	// first recall on the left child 
+	printInOrder(node.left);	
+
+
+	// print the actual value of the node
+	sout(node.key + " ");
+
+
+	// second call on the right child 
+
+	printInOrder(node.right);
+
+	
+
+
+}
