@@ -1,8 +1,10 @@
 we describe the wanted result not how we get the result !
 expressed in a declarative way not imperative way !
 
+parallel stream uses multiple cores of the cpu
+and each thread will be divided into a random core of the cpu
 
-
+the order of execution is not constant in parallel streams !
 
 
 
