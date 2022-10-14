@@ -1,0 +1,8 @@
+forEach() method in Collection interface which expects a functional interface of the Consumer type 
+as a paramter !
+
+entiers.forEach(valeur -> {
+      if (valeur < 10) {
+        somme.add(valeur);
+      }
+});

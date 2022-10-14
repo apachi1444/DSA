@@ -1,0 +1,35 @@
+we describe the wanted result not how we get the result !
+expressed in a declarative way not imperative way !
+
+
+
+
+
+
+Java 8 gives the possibility of doing the functional programmation even the java is 
+POO
+
+API stream != class xxxStream de JAVA I/O
+( same approach but in IO we have to take care of bytes but in stream take care of data ! )
+
+developer takes care only of the data not the techinques and the methods used behind !
+
+optimizing treatements thanks to lazyness et uses the operators short-circuiting
+which interrompts the treatements before a condition is done
+
+execute some treatements in parallel
+
+
+takes in parameter functional interface ( the lambda expression or reference to the method )!
+
+the source of the stream can be :
+- Collection / Painting / I/O flow / character string
+
+with the stream api : we can declare processes on a data source that we will be executed sequentially or in parallel !
+
+parallel : requires separation of data into smaller packets ( forking )
+ 	   using a pool of threads !
+	   combine each pocket's result and join them 
+
+
+		
