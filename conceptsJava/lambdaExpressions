@@ -1,5 +1,12 @@
 can only be used with only types of interfaces !
 
+
+it's used to express an anonymous function !!!!!!!
+a function that doesn't have a name or modifier !
+
+// we can implement default methods !
+
+
 interfaces are like a contracts for classes that want to implement that interface !
 
 lambdas allow us to pass only a specific implementation !
