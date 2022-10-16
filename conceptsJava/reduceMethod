@@ -1,0 +1,10 @@
+reduce return an output from a stream 
+
+T reduce ( T identity , BinaryOperator<T> accumulator );
+
+accumulator is a function for combining two values 
+identity = nothing initial value 
+
+Integer sumResult = Stream.of(1,2,3,4,5).reduce(0,(a,b) -> a+b);
+
+
