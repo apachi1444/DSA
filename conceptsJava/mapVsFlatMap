@@ -1,0 +1,25 @@
+map is used to produce single value of each input value
+"One-To-One Mapping "!
+
+map() takes Stream as Input and return Stream !
+
+
+flatMap is used to produce multiple value for each input value 
+"One-To-Mnay Mapping"
+
+takes Stream<Stream<T>> as input and returns Stream<R>
+
+
+example of map:
+Stream.of("a","b") : transform data from lowercase to uppercase 
+
+convert stream of stream into single stream
+[[1,2] , [3,4]] => [1,2,3,4]
+
+
+example of flatMap
+List<String> phones = customers.stream().flatMap(customer -> customer.getPhones().stream())
+				.collect(Collectors.toList());
+
+
+// that s why we called it one to Many because a customer has too many numbers
