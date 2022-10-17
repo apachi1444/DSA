@@ -27,3 +27,23 @@ if ( optional.isPresent() ) {
 Cat myCat = optionalCat.orElse(new Cat("UNKNOW" , 15));
 
 
+
+----------------------------
+to create an optional we must use these three methods !
+- of
+- empty 
+- ofNullable ( it allows us to use an empty value in the optional )
+
+isPresent() : checks whether the optional is not empty or not !
+orElse("") : will return a default value if he didn't find nothing 
+in the optional i mean if the optional is empty 
+
+-----------------------------------
+we can use the supplier interface in the orElseGet() method of the optional
+and we know that the supplier only returs to us a return type without
+getting an input
+
+System.out.println(optional.map(String::toUpperCase)
+			   .orElseGet(() -> "default email"))
+
+
