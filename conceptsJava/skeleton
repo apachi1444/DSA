@@ -1,0 +1,11 @@
+it's an object that acts as gateway for the server side of object 
+
+all the incoming requests are routed through it 
+
+when he receives an incoming request from the client it does the following things :
+
+- it reads the params from the remote object 
+- it invokes the method on the actual remote object
+- it writes and transmits ( marshals !! ) the result to the caller !
+
+

@@ -1,0 +1,20 @@
+1
+
+when the client makes a call to the remote object it is received by the stub which
+passes this requet to the remote ref layer 
+
+2
+
+when client side RRL receives the request , it invokes a method called invoke() 
+of the object remote ref. It passes the request to the RRL on the server side
+
+3
+
+when RRL on the server side passes the request to the skeleton 
+( proxy on the server )
+which finally invokes the required obj on the server
+
+4
+
+the result is passed all the way to the client
+

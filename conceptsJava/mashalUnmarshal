@@ -1,0 +1,10 @@
+when a caller invokes method on the stub object 
+
+- initiates a connection with JVM
+- it writes and transmits ( marshal !! ) the params to the remote virtual machine 
+  by passing this request to the remote Ref Layer ( RRL )! 
+- it waits for the result ( the client side )
+- it reads ( unmarshal ) the return value 
+- it finally returns the value to the caller !
+
+

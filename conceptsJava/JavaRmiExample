@@ -1,0 +1,8 @@
+create the remote interface 
+
+provide implementation on the remote interface 
+
+compile the implementation class & create the stub & skeleton obj using the RMI Tool
+
+start the registyr service by Rmi registry tool 
+

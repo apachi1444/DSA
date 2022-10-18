@@ -1,0 +1,33 @@
+the idea of working with distant objects 
+
+we should first create its interface ! ( the user will call the interface ! )
+
+interface extends Remote!
+
+Remote Method Invocation 
+( an API that provides a mechanism to create distributed applications in JAVA )
+
+it allows an object to invoke method on an object running in another JVM :
+
+the rmi provides communication between the applications using two objects 
+( stub == client ) and skeleton ( server ) !
+
+three layers 
+
+stub/skeleton layer
+remote ref layer
+transport layer !
+
+RMI uses the stub and skeleton objects for communicating with the remtoe objects 
+
+remote object is an ojbet whose method can be invoked from another JVM
+
+
+----------------------
+stub ( client side )
+
+it is an object acts as a gateway for the client side 
+( all the ougoing requests are routed through it )
+
+
+---------------------
