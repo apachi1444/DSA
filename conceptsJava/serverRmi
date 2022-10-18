@@ -1,0 +1,27 @@
+the server will first create the implementation object ( with creating of course the skeleton )
+
+then he will post this object in the registry 
+// to post this object into the registry
+// use the Naming.rebind(name,obj);
+name : rmi://localhost:1099/BK: bk name of the object !
+
+we have to start the dictionnary ( the registry before the server ) !
+
+we can either start the registry directly from the server main 
+or we can start alone !
+
+the client will first get the ref of the object from the registry
+
+create his stub which will make the connexion with the skeleton !
+
+
+Interface = Naming.lookup() // will return a remote object
+// that's why we make our interface extends remote
+
+it will return a stub then we must do a connextion with the skeleton 
+--> then the client will do directly stub.nameMethodInInterface !
+
+
+in the client part we should not rewrite the code of the server
+but we should export the jar file of the server ( the interface and the business entity )
+and insert it to the client project !

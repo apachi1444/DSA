@@ -1,0 +1,6 @@
+when we execute our code 
+it should be java -cp "path of the folder ! that contains the jar"
+
+java -cp ..;./ ( will search in ".." and "./" )
+
+file.bat is eq to file.sh in linux

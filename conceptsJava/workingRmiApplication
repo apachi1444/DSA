@@ -18,3 +18,14 @@ which finally invokes the required obj on the server
 
 the result is passed all the way to the client
 
+// when we use in the service implementation UniCastRemoteObject
+
+when we create an ojbect of that implemenation it will create automatically the skeleton 
+and the skeleton will create a serverSocket to listen to the requests ( a port randomly )
+
+if we want to precise the port we should use in the constructor of 
+the implementation the int port !!
+
+Impl(int port ){
+	super(port);
+}
